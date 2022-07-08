@@ -58,11 +58,12 @@ public class Main {
         file.createNewFile();
     }
 
-    private static void writeFile(File file, String content) throws IOException {
+    private static void writeFile(File file, String content)throws IOException {
         try (FileWriter fw = new FileWriter(file, true);
              BufferedWriter bw = new BufferedWriter(fw)) {
             bw.write(content);
             bw.newLine();
+            bw.flush();
         }
     }
 }
