@@ -50,11 +50,11 @@ public class Main {
         }
     }
 
-    private static void addCatalog(File file, String content) throws IOException {
+    private static void addCatalog(File file,String name) throws IOException {
         file.mkdir();
     }
 
-    private static void addFile(File file, String content) throws IOException {
+    private static void addFile(File file, String name) throws IOException {
         file.createNewFile();
     }
 
